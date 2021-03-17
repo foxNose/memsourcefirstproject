@@ -1,0 +1,88 @@
+.projects .projects-container {
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    grid-template-columns: 1fr;
+}
+
+.projects .projects-container .project-header {
+    background-color: #0072a9;
+    color: white;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 3fr;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.projects .projects-container .projects .project-item {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 3fr;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.projects .projects-container .projects-paginator {
+    width: auto;
+    text-align: center;
+    padding: 2px;
+    background-color: #0072a9;
+    color: white;
+}
+
+.projects .projects-container.loading .projects {
+    height: 70vh;
+    background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+}
+
+.projects .projects-container.loading .projects *,
+.projects .projects-container.loading .projects-paginator {
+    display: none;
+}
+
+.projects .projects-container .projects .project-item:nth-of-type(odd) {
+    background-color: #ccdef3;
+}
+
+.projects .projects-container .projects-paginator .page-btn {
+    cursor: pointer;
+    background: #242d37;
+    border-radius: 2px;
+    min-width: 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 11px;
+    border: none !important;
+    color: white;
+    padding:3px;
+    margin:1px;
+}
+
+.projects .projects-container .projects-paginator .page-btn.disabled {
+    cursor: default;
+    background-color: #6b6b6b;
+    color: black;
+}
+
+.lang-wrapper {
+    background: #6c7b81;
+    border-radius: 2px;
+    min-width: 40px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 11px;
+    border: none !important;
+    margin-top: 2px;
+    padding: 0px 5px;
+    color: white;
+    font-weight: bold;
+}
